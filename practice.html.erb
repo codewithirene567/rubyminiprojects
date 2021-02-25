@@ -1,0 +1,20 @@
+<%= form_for(model) do |argument| %>
+    #error areas
+<div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+</div>
+#syntax for forms
+<div class="form-group">
+    <%= form.submit "Text here", class: "btn btn-primary" %>
+</div>
+<% end %>
+
+<%= link_to "All Books", books_path %>
+
+<%= form_for(@animal) do |f|%>
+        <%= f.label :name%>
+        <%= f.text_field :name %>
+        <%= f.submit %>
+<% end %>
+
